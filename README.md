@@ -1,8 +1,7 @@
 # Bot PvP Boxing
 
 A PocketMine-MP plugin (API `5.44.3`) that lets players box against an AI
-bot — first to land **100 hits** wins, styled after the Zeqa Network "Bot
-PvP" minigame.
+bot first to land **100 hits** wins
 
 ## Installation
 
