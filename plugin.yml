@@ -1,0 +1,23 @@
+name: BotPvPBoxing
+main: BotPvPBoxing\Main
+version: 1.0.0
+api: ["5.44.3"]
+author: Appolo
+description: "A boxing-style PvP bot minigame. First player to land 100 hits wins!"
+
+commands:
+  botpvp:
+    description: "Main command for the Bot PvP Boxing minigame"
+    usage: "/botpvp <join|leave|create|remove|list|info|setbotspawn|setplayerspawn|setspeed|setrange|setskin|setlobby>"
+    permission: botpvp.command
+    aliases: [boxing, bpvp]
+
+permissions:
+  botpvp.command:
+    description: "Allows use of /botpvp join and /botpvp leave"
+    default: true
+  botpvp.admin:
+    description: "Allows management of Bot PvP Boxing arenas"
+    default: op
+    children:
+      botpvp.command: true
